@@ -1,0 +1,312 @@
+<html>
+	<head>
+		<title>hello, i'm thiti</title>
+		<style>
+		body {
+			background: #ff9966;
+			background: linear-gradient(to bottom right, #d3aab3, #ffc066);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container {
+			width: 25rem;
+			height: 25rem;
+			background: #e2b7c1;
+			background: linear-gradient(to bottom right, #ff9966, #b48d96);
+			transform: rotate(45deg);
+			position: absolute;
+		}
+		.container-copy {
+			width: 25rem;
+			height: 25rem;
+			background: transparent;
+		}
+		.head {
+			width: 15rem;
+			height: 15rem;
+			background: #eb7f03;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.head-copy {
+			width: 100%;
+			height: 100%;
+			background: #eb7f03;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
+		.ear-left {
+			width: 5.5rem;
+			height: 5.5rem;
+			border-radius: 50%;
+			background: #eb7f03;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+		}
+		.ear-right {
+			width: 5.5rem;
+			height: 5.5rem;
+			border-radius: 50%;
+			background: #eb7f03;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+		}
+		.inner-ear {
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			background: #ffe68e;
+			position: absolute;
+		}
+		.eye-left {
+			width: 1rem;
+			height: 1rem;
+			background: #6d3a0b;
+			border-radius: 50%;
+			position: absolute;
+			top: 45%;
+			left: 35%;
+			z-index: 3;
+		}
+		.eye-right {
+			width: 1rem;
+			height: 1rem;
+			background: #6d3a0b;
+			border-radius: 50%;
+			position: absolute;
+			top: 45%;
+			right: 35%;
+			z-index: 3;
+		}
+		.mouth-area {
+			width: 10rem;
+			height: 6rem;
+			border-radius: 20rem;
+			background: #f8ecc8;
+			position: absolute;
+			top: 60%;
+			left: 17%;
+			z-index: 2;
+		}
+		.nose-area {
+			width: 3.5rem;
+			height: 4rem;
+			border-radius: 50%;
+			background: #6d3a0b;
+			position: absolute;
+			top: 50%;
+			left: 38%;
+			z-index: 3;
+		}
+		.nose {
+			width: 2.5rem;
+			height: 2rem;
+			border-radius: 50%;
+			background: #000;
+			position: absolute;
+			top: 64%;
+			left: 41%;
+			z-index: 4;
+		}
+		.stripe-center {
+			width: 0.8rem;
+			height: 4rem;
+			background: #6d3a0b;
+			border-radius: 20rem;
+			position: absolute;
+			left: 47%;
+			z-index: 3;
+		}
+		.stripe-left {
+			width: 0.8rem;
+			height: 3rem;
+			background: #6d3a0b;
+			border-radius: 20rem;
+			position: absolute;
+			top: 8%;
+			left: 23%;
+			z-index: 3;
+			transform: rotate(-45deg);
+		}
+		.stripe-right {
+			width: 0.8rem;
+			height: 3rem;
+			background: #6d3a0b;
+			border-radius: 20rem;
+			position: absolute;
+			top: 8%;
+			right: 23%;
+			z-index: 3;
+			transform: rotate(45deg);
+		}
+		.freckle-1 {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 70%;
+			left: 29%;
+		}
+		.freckle-2 {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 79%;
+			left: 22%;	
+		}
+		.freckle-3 {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 86%;
+			left: 29%;	
+		}
+		.freckle-1-right {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 70%;
+			right: 29%;
+		}
+		.freckle-2-right {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 79%;
+			right: 22%;	
+		}
+		.freckle-3-right {
+			position: absolute;
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 50%;
+			background: #000 ;
+			z-index: 4;
+			top: 86%;
+			right: 29%;	
+		}
+		.mouth {
+			background: #000;
+			position: absolute;
+			width: 0.5rem;
+			height: 3rem;
+			border-radius: 20rem;
+			background: #000;
+			z-index: 4;
+			top: 68%;
+			left: 46%;
+			transform: rotate(30deg);
+		}
+		.mouth-right {
+			background: #000;
+			position: absolute;
+			width: 0.5rem;
+			height: 3rem;
+			border-radius: 20rem;
+			background: #000;
+			z-index: 4;
+			top: 68%;
+			right: 48%;
+			transform: rotate(-30deg);
+		}
+		.ball-1 {
+			position: absolute;
+			left: 75%;
+			background: #f8ecc8;
+			border-radius: 50%;
+			background: linear-gradient(#fff, transparent);
+			width: 8rem;
+			height: 8rem;
+			z-index: 5;
+			transform: rotate(90deg);
+		}
+		.ball-2 {
+			position: absolute;
+			top: 20%;
+			right: 75%;
+			background: #f8ecc8;
+			border-radius: 50%;
+			background: linear-gradient(#fff, transparent);
+			width: 5rem;
+			height: 5rem;
+			z-index: 5;
+		}
+		.ball-3 {
+			position: absolute;
+			bottom: 10%;
+			left: 30%;
+			background: #f8ecc8;
+			border-radius: 50%;
+			background: linear-gradient(#fff, transparent);
+			width: 9rem;
+			height: 9rem;
+			z-index: 5;
+			transform: rotate(-90deg);
+		}
+		</style>
+	</head>
+	<body>
+		<div class="ball-1"></div>
+		<div class="ball-2"></div>
+		<div class="ball-3"></div>
+		<div class="container"></div>
+		<div class="container-copy">
+			<div class="head">
+				<div class="head-copy"></div>
+				<div class="ear-left">
+					<div class="inner-ear"></div>
+				</div>
+				<div class="ear-right">
+					<div class="inner-ear"></div>
+				</div>
+				<div class="eye-left"></div>
+				<div class="eye-right"></div>
+				<div class="mouth-area"></div>
+				<div class="nose-area"></div>
+				<div class="nose"></div>
+				<div class="freckle-1"></div>
+				<div class="freckle-2"></div>
+				<div class="freckle-3"></div>
+				<div class="freckle-1-right"></div>
+				<div class="freckle-2-right"></div>
+				<div class="freckle-3-right"></div>
+				<div class="mouth"></div>
+				<div class="mouth-right"></div>
+				<div class="stripe-left"></div>
+				<div class="stripe-center"></div>
+				<div class="stripe-right"></div>
+		</div>
+	</body>
+</html>
