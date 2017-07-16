@@ -1,5 +1,5 @@
 # Pure-CSS-Crafts
-Repository for vector images made with Pure CSS
+Repository for vector images made with Pure CSS Images
 
 **Bubu The Polar Bear** (bubu.html)
 
@@ -10,4 +10,5 @@ Repository for vector images made with Pure CSS
 ![thiti the tiger](http://i.imgur.com/nhzzzUm.png)
 
 **Baby Dory** (dory.html)
+
 ![baby dory](http://i.imgur.com/4fAROLh.png)
