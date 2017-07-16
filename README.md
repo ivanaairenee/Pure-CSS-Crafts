@@ -8,3 +8,6 @@ Repository for vector images made with Pure CSS
 **Thiti The Tiger** (thiti.html)
 
 ![thiti the tiger](http://i.imgur.com/nhzzzUm.png)
+
+**Baby Dory**
+![baby dory](http://i.imgur.com/4fAROLh.png)

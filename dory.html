@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <title>hi, i'm baby dory!</title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffefc7; 
+        width: 25rem;
+        height: 25rem;
+        border-radius: 3rem;
+        z-index:0;
+      }
+      .head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+        width: 14rem;
+        height: 15rem;
+        border-radius: 50%;
+        z-index: 2;
+      }
+      .eye-left {
+        position: absolute;
+        top: 15%;
+        left: -6%;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        height: 7.5rem;
+        width: 7.5rem;
+        border-radius: 50%;
+        z-index: 3;
+        -webkit-box-shadow: 10px 0 8px -6px #003a9f;
+        -moz-box-shadow: 10px 0 8px -6px #003a9f;
+        box-shadow: 10px 0 8px -6px #003a9f;
+      }
+      .eye-right {
+        position: absolute;
+        top: 15%;
+        right: -6%;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        height: 7.5rem;
+        width: 7.5rem;
+        border-radius: 50%;
+        z-index: 3;
+        -webkit-box-shadow: -10px 0 8px -6px #003a9f;
+        -moz-box-shadow: -10px 0 8px -6px #003a9f;
+        box-shadow: -10px 0 8px -6px #003a9f;
+      }
+      .inner-eye-left {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        background-image: linear-gradient(135deg, #667eea 0%, #ff49ec 100%);
+        width: 6.2rem;
+        height: 6.2rem;
+        border-radius: 50% 43% 43% 50%;
+      }
+      .inner-eye-right {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        background-image: linear-gradient(135deg, #667eea 0%, #ff49ec 100%);
+        width: 6.2rem;
+        height: 6.2rem;
+        border-radius: 43% 50%  50% 43%;
+      }
+      .iris-left {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translate(0,-50%);
+        background: black;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+      }
+      .iris-right {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translate(0,-50%);
+        background: black;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+      }
+      .sparkle-left {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 1.2rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: #fafafa;
+      }
+      .sparkle-right {
+        position: absolute;
+        top: 3%;
+        right: 25%;
+        width: 1.2rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: #fafafa;
+      }
+      .mouth {
+        position: absolute;
+        left: 50%;
+        bottom: 18%;
+        transform: translate(-50%,0);
+        background: #003a9f;
+        width: 2rem;
+        height: 1rem;
+        border-radius: 0 0 20rem 20rem;
+      }
+      .tongue {
+        width: 1rem;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 0.3rem;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        background: #ff7fca;
+      }
+      .fin-left{
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        left: -5px;
+        bottom: 10%;
+        clip-path: polygon(0 0, 100% 35%, 100% 70%, 0 100%);
+        background:#007cfe;
+        transform: rotate(-15deg);
+        border-radius: 3rem;
+        border-left: 5px solid #ffff00;
+      }
+      .fin-right{
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        right: -5px;
+        bottom: 10%;
+        clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 70%);
+        background:#007cfe;
+        transform: rotate(15deg);
+        border-radius: 3rem;
+        border-right: 5px solid #ffff00;
+      }
+      .fin-top{
+        width: 3.2rem;
+        height: 3.2rem;
+        position: absolute;
+        left: 50%;
+        top: 32%;
+        clip-path: polygon(70% 0, 100% 100%, 0 100%, 35% 0);
+        background:#007cfe;
+        transform: translate(-50%, -50%) rotate(180deg);
+        border-radius: 3rem;
+        border-bottom: 5px solid #ffff00;
+        z-index: 1;
+      }
+      .bubble-one {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border-radius: 50%;
+        left: 20rem;
+        bottom: 10rem;
+        background-image: linear-gradient(135deg, #fafafa 0%, transparent 100%);
+      }
+      .bubble-two {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        border-radius: 50%;
+        right: 15rem;
+        bottom: 35rem;
+        background-image: linear-gradient(135deg, #fafafa 0%, transparent 100%);
+      }
+      .bubble-three {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        border-radius: 50%;
+        left: 30rem;
+        bottom: 15rem;
+        background-image: linear-gradient(135deg, #fafafa 0%, transparent 100%);
+      }
+
+    </style>
+  </head>
+  <body>
+      <div class="head">
+        <div class="eye-left">
+          <div class="inner-eye-left">
+            <div class="iris-left">
+              <div class="sparkle-left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="eye-right">
+          <div class="inner-eye-right">
+            <div class="iris-right">
+              <div class="sparkle-right"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mouth">
+          <div class="tongue"></div>
+        </div>
+        <div class="fin-left"></div>
+        <div class="fin-right"></div>
+      </div>
+      <div class="fin-top"></div>
+      <div class="bubble-one"></div>
+      <div class="bubble-two"></div>
+      <div class="bubble-three"></div>
+  </body>
+</html>
